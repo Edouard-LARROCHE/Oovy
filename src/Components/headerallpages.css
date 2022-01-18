@@ -1,0 +1,15 @@
+.headerlogo {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10em;
+}
+/*********************************Media-Queries***************************/
+
+@media (max-width: 768px) {
+  .logoheader {
+    max-width: 95%;
+    height: auto;
+  }
+}

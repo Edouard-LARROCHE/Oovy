@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+.transparent {
+  min-width: 10em;
+  font-family: 'Oleo Script', solid;
+}
+
+.buttonCategory {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.showCategorie {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .buttonCategory {
+    display: none;
+  }
+
+  .showCategorie {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .closeIcon {
+    margin-top: -2em;
+    margin-right: -2em;
+  }
+  .openIcon {
+    display: flex;
+    justify-content: center;
+  }
+}
