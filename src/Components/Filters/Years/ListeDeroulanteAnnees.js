@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ListeDeroulanteAnnees.css';
 
 const ListeDeroulante = ({ startYear, endYear, handleFilmByYears }) => {
-  const [years, setYears] = useState(
+  const [years] = useState(
     ((startYear, endYear) => {
       let tabYears = [];
       for (let i = startYear; i <= endYear; i++) {

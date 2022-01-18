@@ -14,7 +14,7 @@ function Filters() {
   const [filmsFilteredFinal, setFilmsFilteredFinal] = useState([]);
   const [filmFilteredGenres, setFilmFilteredGenres] = useState(films);
 
-  const [limit, setLimit] = useState(3);
+  const [limit] = useState(3);
 
   const movieList = () => {
     axios
@@ -27,7 +27,6 @@ function Filters() {
   };
 
   useEffect(() => {
-    setLimit();
     movieList();
   });
 
